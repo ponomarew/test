@@ -1,0 +1,106 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire",
+        "state": {
+          "branch": "master",
+          "revision": "66d58fed07b5e6cc06ad6e086c72f10759196ea9",
+          "version": null
+        }
+      },
+      {
+        "package": "openssl-apple",
+        "repositoryURL": "https://github.com/passepartoutvpn/openssl-apple",
+        "state": {
+          "branch": null,
+          "revision": "42a049c406c1aa3df11a8dd14b1b11cd470f4a00",
+          "version": "1.1.11200"
+        }
+      },
+      {
+        "package": "OverlayContainer",
+        "repositoryURL": "https://github.com/applidium/OverlayContainer",
+        "state": {
+          "branch": null,
+          "revision": "f1c8fc38bb1ad9a810397f1d06f7026a35e0760c",
+          "version": "3.5.2"
+        }
+      },
+      {
+        "package": "Reachability",
+        "repositoryURL": "https://github.com/ashleymills/Reachability.swift",
+        "state": {
+          "branch": "master",
+          "revision": "a81b7367f2c46875f29577e03a60c39cdfad0c8d",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftRichString",
+        "repositoryURL": "https://github.com/malcommac/SwiftRichString",
+        "state": {
+          "branch": "master",
+          "revision": "e0b72d5c96968d7802856d2be096202c9798e8d1",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftyBeaver",
+        "repositoryURL": "https://github.com/SwiftyBeaver/SwiftyBeaver",
+        "state": {
+          "branch": null,
+          "revision": "2c039501d6eeb4d4cd4aec4a8d884ad28862e044",
+          "version": "1.9.5"
+        }
+      },
+      {
+        "package": "SwiftyGif",
+        "repositoryURL": "https://github.com/kirualex/SwiftyGif",
+        "state": {
+          "branch": null,
+          "revision": "db0c122b671bc9760385e0355be00eede3b7bb44",
+          "version": "5.4.3"
+        }
+      },
+      {
+        "package": "SwiftyStoreKit",
+        "repositoryURL": "https://github.com/bizz84/SwiftyStoreKit",
+        "state": {
+          "branch": null,
+          "revision": "9ce911639680113dac9b554d6243e406a9758ebe",
+          "version": "0.16.4"
+        }
+      },
+      {
+        "package": "SwiftyUserDefaults",
+        "repositoryURL": "https://github.com/sunshinejr/SwiftyUserDefaults",
+        "state": {
+          "branch": null,
+          "revision": "f66bcd04088582c8fbb5cb8554d577e303bae396",
+          "version": "5.3.0"
+        }
+      },
+      {
+        "package": "TableKit",
+        "repositoryURL": "https://github.com/maxsokolov/TableKit",
+        "state": {
+          "branch": "master",
+          "revision": "8bf4840d9d0475a92352f02f368f88b74eced447",
+          "version": null
+        }
+      },
+      {
+        "package": "WireGuardKit",
+        "repositoryURL": "https://git.zx2c4.com/wireguard-apple",
+        "state": {
+          "branch": null,
+          "revision": "10da5cfdef362889b438cfbeff867a74e6d717fd",
+          "version": "1.0.15-26"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

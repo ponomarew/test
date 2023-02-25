@@ -1,0 +1,80 @@
+/*
+  Localizable.strings
+  EmpireVPN
+
+  Created by Александр Пономарёв on 23.12.2020.
+  Copyright © 2020 Anchorfree Inc. All rights reserved.
+*/
+
+//onboarding
+"firstOnboardingTitle" = "Over 20 Servers\nReady to connect";
+"secondOnboardingTitle" = "Ultra Fast VPN servers\nwith low ping";
+"thirdOnboardingTitle" = "Private Access and\nInternet Security";
+
+"firstOnboardingSubtitle" = "A VPN is a private network that allows you to browse the internet anonymously and securely from anywhere in the world by creating an encrypting connection between your computer and the internet.";
+"secondOnboardingSubtitle" = "Your ISP can slow down binge-watching marathon. Enjoy uninterrupted streaming without buffering and bandwidth throttling while Shade VPN is on. The fast and reliable connection only.";
+"thirdOnboardingSubtitle" = "Encrypt all Internet traffic and protect your privacy from hackers, spies, and the government. Shade VPN mask your internet protocol address so your online actions are virtually untraceable.";
+
+"continue" = "Continue";
+
+
+//paywall
+"Shade Premium Unlock" = "Shade Premium\nUnlock";
+
+"restore" = "Restore";
+
+"no commitment cancel anytime" = "No commitment. Cancel anytime.";
+
+"3 Days Free Trial" = "Online Privacy";
+"Fast Browsing and Games" = "Fast Browsing and Games";
+"Unlimited Bandwidth" = "Unlimited Bandwidth";
+"Ads Free" = "Ads Free";
+
+"Ready to activate?" = "Ready to activate?";
+
+"Yes, start trial" = "Yes, start trial";
+
+"FREE trial 3 days, then" = "Free trial 3 days";
+"cancel anytime" = "\nthen %@/week. Cancel anytime.";
+
+"terms of use" = "Terms of Use";
+"privacy policy" = "Privacy Policy";
+
+"start with free trial" = "start with free trial";
+
+//settings
+
+"user" = "User";
+"premium user" = "Premium User";
+
+"change plan" = "change plan";
+
+"Customer Support" = "Customer Support";
+"Rate Us" = "Rate Us";
+
+"yearly plan" = "Yearly plan";
+"monthly plan" = "Monthly plan";
+"weekly plan" = "Weekly plan";
+
+//main
+
+"on" = "on";
+"OFF" = "OFF";
+
+"you are not protected" = "you are not protected";
+"connecting..." = "connecting...";
+"you are protected" = "you are protected";
+
+"ip address" = "ip address";
+"Duration" = "Duration";
+
+"selected server" = "selected server";
+
+"try free premium" = "try free premium";
+"Try Premium Subscription for 3 days" = "Try Premium Subscription\nfor 3 days";
+
+//country list
+
+"servers" = "servers";
+
+

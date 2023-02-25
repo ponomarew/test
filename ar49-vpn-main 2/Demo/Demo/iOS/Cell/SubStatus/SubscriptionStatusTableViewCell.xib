@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="92" id="KGk-i7-Jjw" customClass="SubscriptionStatusTableViewCell" customModule="TunnelKitDemo_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inactive" translatesAutoresizingMaskIntoConstraints="NO" id="GzV-v0-F1f">
+                        <rect key="frame" x="270" y="30" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="ktF-yi-viX"/>
+                            <constraint firstAttribute="height" constant="20" id="lcc-yI-Vjc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Subscription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRe-w2-2lX">
+                        <rect key="frame" x="20" y="10" width="123.5" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="9m4-0R-nbZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                        <color key="textColor" red="0.45882352941176469" green="0.58039215686274503" blue="0.6705882352941176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grayDisclosure" translatesAutoresizingMaskIntoConstraints="NO" id="HoW-Rk-Hjd">
+                        <rect key="frame" x="376" y="32" width="8" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="Cu6-fi-JiZ"/>
+                            <constraint firstAttribute="height" constant="16" id="XSm-TQ-rSh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inactive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGA-Ca-zWJ">
+                        <rect key="frame" x="300" y="30.5" width="61" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="61" id="rfb-Kv-giz"/>
+                            <constraint firstAttribute="height" constant="19" id="uzq-WB-SUs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                        <color key="textColor" name="defaultTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="GzV-v0-F1f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cRe-w2-2lX" secondAttribute="trailing" constant="5" id="04x-g8-sdY"/>
+                    <constraint firstItem="ZGA-Ca-zWJ" firstAttribute="centerY" secondItem="GzV-v0-F1f" secondAttribute="centerY" id="0iA-4V-xrY"/>
+                    <constraint firstItem="cRe-w2-2lX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="CXJ-zz-Grv"/>
+                    <constraint firstAttribute="trailing" secondItem="HoW-Rk-Hjd" secondAttribute="trailing" constant="25" id="dvO-9H-eNm"/>
+                    <constraint firstItem="cRe-w2-2lX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ieM-id-klN"/>
+                    <constraint firstItem="ZGA-Ca-zWJ" firstAttribute="leading" secondItem="GzV-v0-F1f" secondAttribute="trailing" constant="10" id="mWe-DI-bbh"/>
+                    <constraint firstAttribute="bottom" secondItem="cRe-w2-2lX" secondAttribute="bottom" constant="10" id="on1-y6-kIn"/>
+                    <constraint firstItem="HoW-Rk-Hjd" firstAttribute="leading" secondItem="ZGA-Ca-zWJ" secondAttribute="trailing" constant="15" id="qJo-eE-kfS"/>
+                    <constraint firstItem="GzV-v0-F1f" firstAttribute="centerY" secondItem="cRe-w2-2lX" secondAttribute="centerY" id="sCy-p5-0Qc"/>
+                    <constraint firstItem="HoW-Rk-Hjd" firstAttribute="centerY" secondItem="ZGA-Ca-zWJ" secondAttribute="centerY" id="z5h-VV-Ai7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="statusImage" destination="GzV-v0-F1f" id="hyU-5s-XFL"/>
+                <outlet property="statusLabel" destination="cRe-w2-2lX" id="73G-hH-O41"/>
+                <outlet property="subStatusLabel" destination="ZGA-Ca-zWJ" id="HK3-ll-Kqm"/>
+            </connections>
+            <point key="canvasLocation" x="202.17391304347828" y="101.78571428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="grayDisclosure" width="11" height="19"/>
+        <image name="inactive" width="28" height="29"/>
+        <namedColor name="defaultTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

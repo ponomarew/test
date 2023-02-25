@@ -1,0 +1,29 @@
+#strings:
+ # inputs: PDDExam/Resources/Localize/ru.lproj/Localizable.strings
+#  outputs:
+#    templateName: structured-swift4
+#    output: PDDExam/Resources/Localize/String+Localize.swift
+xcassets:
+  inputs:  Demo/Demo/iOS/Resources/Assets/Assets.xcassets
+  outputs:
+    templateName: swift4
+    output: Demo/Demo/iOS/Resources/Assets/Assets.swift
+    
+#ib:
+#  inputs: HydraSDKDemo
+#  outputs:
+#    templateName: scenes-swift4
+#    output: HydraSDKDemo/Resources/Storyboards/Storyboards.swift
+
+#fonts:
+#  inputs: HydraSDKDemo
+#  outputs:
+#    templateName: swift4
+#    output: HydraSDKDemo/Fonts.swift
+ 
+  
+#strings:
+#  inputs: Heartio/ru-RU.lproj/Localization.strings
+#  outputs:
+#    templateName: structured-swift4
+#    output: Strings.swift

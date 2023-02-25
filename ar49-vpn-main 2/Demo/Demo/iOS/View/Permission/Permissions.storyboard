@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Black.ttf">
+            <string>Montserrat-Black</string>
+        </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Terms Of Use View Controller-->
+        <scene sceneID="DPF-sh-Gz7">
+            <objects>
+                <viewController storyboardIdentifier="termOfUseVc" id="OIC-xQ-BVi" customClass="TermsOfUseViewController" customModule="TunnelKitDemo_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eBP-Nf-mQg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="toC-nH-80P">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wm-1K-38P">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AiQ-hG-EAP">
+                                                <rect key="frame" x="67" y="569" width="241" height="55"/>
+                                                <color key="backgroundColor" red="0.12549019610000001" green="0.69411764710000001" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="b0J-Dq-K8Y"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                                <state key="normal" title="Agree &amp; Continue">
+                                                    <color key="titleColor" name="defaultTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="26"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="acceptPrivacy:" destination="OIC-xQ-BVi" eventType="touchUpInside" id="gea-qD-FBf"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRe-5C-e6R">
+                                                <rect key="frame" x="15" y="114" width="345" height="249"/>
+                                                <string key="text">Thank you for choosing PROVPN. We consider that your privacy is important, that’s why we will collect only the minimum data required to offer you a safe and stable VPN connection. For your convenience you can see here the bullet points of data collected by us:  - IP address and/or browser and device characteristics which we do not retain; - limited data from public databases, marketing partners, and other outside sources  We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations. For more information, please read our Terms of Use and Privacy Policy.
+</string>
+                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                                                <color key="textColor" name="defaultTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="De7-tf-R2o">
+                                                <rect key="frame" x="115" y="8" width="145" height="30"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shield" translatesAutoresizingMaskIntoConstraints="NO" id="Vgt-o2-kDD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="28" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="pMZ-kx-yWz"/>
+                                                            <constraint firstAttribute="width" constant="28" id="r6w-18-yxQ"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVPN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcQ-on-cBm">
+                                                        <rect key="frame" x="43" y="0.0" width="102" height="27"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="102" id="X1h-iu-jdT"/>
+                                                            <constraint firstAttribute="height" constant="27" id="qdt-LZ-25R"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Black" family="Montserrat" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Rl8-ek-71m"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR PRIVACY IS THE KING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sln-tg-Qph">
+                                                <rect key="frame" x="0.0" y="58" width="375" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="rPC-7t-TW4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                                <color key="textColor" red="0.12549019607843137" green="0.69411764705882351" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k30-lQ-YJ2">
+                                                <rect key="frame" x="88" y="634" width="199" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="0Wd-mu-RXi"/>
+                                                    <constraint firstAttribute="width" constant="199" id="49w-NR-7Of"/>
+                                                </constraints>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Terms of Service">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.69956952333450317" blue="1" alpha="0.99962615970000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="cellTitle"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" &amp;">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <font key="NSFont" metaFont="cellTitle"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <font key="NSFont" metaFont="cellTitle"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Privacy Policy">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.12549019607843137" green="0.69411764705882351" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" metaFont="cellTitle"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="backgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Sln-tg-Qph" firstAttribute="top" secondItem="De7-tf-R2o" secondAttribute="bottom" constant="20" id="349-AA-nLt"/>
+                                            <constraint firstItem="Sln-tg-Qph" firstAttribute="leading" secondItem="3wm-1K-38P" secondAttribute="leading" id="DAS-ou-a0O"/>
+                                            <constraint firstItem="k30-lQ-YJ2" firstAttribute="top" secondItem="AiQ-hG-EAP" secondAttribute="bottom" constant="10" id="H94-MZ-fFA"/>
+                                            <constraint firstItem="AiQ-hG-EAP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZRe-5C-e6R" secondAttribute="bottom" constant="20" id="PcJ-yA-xio"/>
+                                            <constraint firstItem="AiQ-hG-EAP" firstAttribute="leading" secondItem="3wm-1K-38P" secondAttribute="leading" constant="67" id="QFR-Ej-CK9"/>
+                                            <constraint firstItem="ZRe-5C-e6R" firstAttribute="leading" secondItem="3wm-1K-38P" secondAttribute="leading" constant="15" id="R5r-Wj-WrE"/>
+                                            <constraint firstAttribute="trailing" secondItem="Sln-tg-Qph" secondAttribute="trailing" id="RD4-3p-tel"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZRe-5C-e6R" secondAttribute="trailing" constant="15" id="YUC-Wc-rof"/>
+                                            <constraint firstAttribute="bottom" secondItem="k30-lQ-YJ2" secondAttribute="bottom" constant="12" id="dVn-ie-fn7"/>
+                                            <constraint firstItem="k30-lQ-YJ2" firstAttribute="centerX" secondItem="AiQ-hG-EAP" secondAttribute="centerX" id="ktH-cS-p53"/>
+                                            <constraint firstAttribute="trailing" secondItem="AiQ-hG-EAP" secondAttribute="trailing" constant="67" id="sSd-st-wMZ"/>
+                                            <constraint firstItem="De7-tf-R2o" firstAttribute="top" secondItem="3wm-1K-38P" secondAttribute="top" constant="8" id="trn-Py-Upy"/>
+                                            <constraint firstItem="De7-tf-R2o" firstAttribute="centerX" secondItem="3wm-1K-38P" secondAttribute="centerX" id="vEe-7D-3UB"/>
+                                            <constraint firstItem="ZRe-5C-e6R" firstAttribute="top" secondItem="Sln-tg-Qph" secondAttribute="bottom" constant="20" id="yoG-xI-noD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="backgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="3wm-1K-38P" firstAttribute="leading" secondItem="toC-nH-80P" secondAttribute="leading" id="7id-bQ-iwe"/>
+                                    <constraint firstItem="3wm-1K-38P" firstAttribute="top" secondItem="toC-nH-80P" secondAttribute="top" id="9yW-UP-dLf"/>
+                                    <constraint firstItem="3wm-1K-38P" firstAttribute="height" secondItem="toC-nH-80P" secondAttribute="height" priority="250" id="Ksq-Mo-b01"/>
+                                    <constraint firstAttribute="bottom" secondItem="3wm-1K-38P" secondAttribute="bottom" id="l1i-Mg-p4y"/>
+                                    <constraint firstAttribute="trailing" secondItem="3wm-1K-38P" secondAttribute="trailing" id="uuN-P8-Otv"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XS4-EN-iZn"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="toC-nH-80P" firstAttribute="trailing" secondItem="XS4-EN-iZn" secondAttribute="trailing" id="4XS-Hb-eKW"/>
+                            <constraint firstItem="toC-nH-80P" firstAttribute="bottom" secondItem="XS4-EN-iZn" secondAttribute="bottom" id="AOd-L2-XNV"/>
+                            <constraint firstItem="toC-nH-80P" firstAttribute="top" secondItem="XS4-EN-iZn" secondAttribute="top" id="SeO-iJ-0lb"/>
+                            <constraint firstItem="3wm-1K-38P" firstAttribute="width" secondItem="eBP-Nf-mQg" secondAttribute="width" id="VKj-wk-0e4"/>
+                            <constraint firstItem="toC-nH-80P" firstAttribute="leading" secondItem="XS4-EN-iZn" secondAttribute="leading" id="vPM-hZ-ESr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="acceptButton" destination="AiQ-hG-EAP" id="zzB-bg-aGM"/>
+                        <outlet property="termsOfUseLabel" destination="ZRe-5C-e6R" id="Ayr-aI-v5q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1bR-ge-R6T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1826.4000000000001" y="-26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shield" width="31" height="34"/>
+        <namedColor name="backgroundColor">
+            <color red="0.12941176470588237" green="0.19215686274509805" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="defaultTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

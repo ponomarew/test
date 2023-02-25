@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Spr-Ai-WqF">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="iuJ-dM-FkD">
+            <objects>
+                <viewController storyboardIdentifier="main" id="Adb-Xa-7or" customClass="VPNViewController" customModule="TunnelKitDemo_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s8L-k9-xZL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="49S-aD-sT4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0YO-Jj-h92">
+                                <rect key="frame" x="377" y="61" width="24" height="24"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="sxn-M3-WBG">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="28s-92-edN"/>
+                                    <constraint firstAttribute="width" constant="24" id="4dF-ZR-dXN"/>
+                                    <constraint firstAttribute="trailing" secondItem="sxn-M3-WBG" secondAttribute="trailing" id="UPW-Vw-7p6"/>
+                                    <constraint firstAttribute="bottom" secondItem="sxn-M3-WBG" secondAttribute="bottom" id="WVX-Y2-OJX"/>
+                                    <constraint firstItem="sxn-M3-WBG" firstAttribute="leading" secondItem="0YO-Jj-h92" secondAttribute="leading" id="XCT-i2-iYS"/>
+                                    <constraint firstItem="sxn-M3-WBG" firstAttribute="top" secondItem="0YO-Jj-h92" secondAttribute="top" id="sib-Fu-Bh4"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROVPN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTv-BW-Bbs">
+                                <rect key="frame" x="156" y="62" width="102" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="0GX-dj-UyG"/>
+                                    <constraint firstAttribute="width" constant="102" id="BQQ-vq-aFO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
+                                <color key="textColor" name="defaultTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startVPN" translatesAutoresizingMaskIntoConstraints="NO" id="dAu-Cb-c8v">
+                                <rect key="frame" x="72" y="318" width="270" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dAu-Cb-c8v" secondAttribute="height" multiplier="1:1" id="Rkk-gs-pjY"/>
+                                    <constraint firstAttribute="width" constant="270" id="yHx-yR-GmS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="turnOffIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="ACD-sC-jzc">
+                                <rect key="frame" x="167" y="105" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="fBE-Er-caz"/>
+                                    <constraint firstAttribute="width" secondItem="ACD-sC-jzc" secondAttribute="height" multiplier="1:1" id="gvs-TE-g9V"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VPN isn't connected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bg6-NJ-vcm">
+                                <rect key="frame" x="0.0" y="185" width="414" height="13.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="11"/>
+                                <color key="textColor" red="0.61176470588235299" green="0.75686274509803919" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="premiumButton" translatesAutoresizingMaskIntoConstraints="NO" id="QN5-zy-ikv">
+                                <rect key="frame" x="0.0" y="54" width="105" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="8c8-g8-VJK"/>
+                                    <constraint firstAttribute="height" constant="38" id="vqB-LS-mOD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mrc-kH-8gp"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dAu-Cb-c8v" firstAttribute="centerY" secondItem="mrc-kH-8gp" secondAttribute="centerY" id="49b-wE-98Y"/>
+                            <constraint firstItem="mrc-kH-8gp" firstAttribute="trailing" secondItem="0YO-Jj-h92" secondAttribute="trailing" constant="13" id="4jG-xT-Hg1"/>
+                            <constraint firstItem="dAu-Cb-c8v" firstAttribute="centerX" secondItem="mrc-kH-8gp" secondAttribute="centerX" id="5KA-pt-ugf"/>
+                            <constraint firstItem="0YO-Jj-h92" firstAttribute="centerY" secondItem="wTv-BW-Bbs" secondAttribute="centerY" id="B50-jh-TyM"/>
+                            <constraint firstItem="wTv-BW-Bbs" firstAttribute="centerY" secondItem="QN5-zy-ikv" secondAttribute="centerY" id="Flz-tF-7wM"/>
+                            <constraint firstItem="QN5-zy-ikv" firstAttribute="top" secondItem="s8L-k9-xZL" secondAttribute="topMargin" constant="10" id="IFg-6S-2UF"/>
+                            <constraint firstItem="wTv-BW-Bbs" firstAttribute="centerX" secondItem="49S-aD-sT4" secondAttribute="centerX" id="Q4U-su-kV4"/>
+                            <constraint firstItem="dAu-Cb-c8v" firstAttribute="centerX" secondItem="Bg6-NJ-vcm" secondAttribute="centerX" id="RLf-Ua-sO4"/>
+                            <constraint firstItem="49S-aD-sT4" firstAttribute="leading" secondItem="mrc-kH-8gp" secondAttribute="leading" id="UI4-dR-Ws3"/>
+                            <constraint firstItem="mrc-kH-8gp" firstAttribute="trailing" secondItem="Bg6-NJ-vcm" secondAttribute="trailing" id="UZG-U2-49p"/>
+                            <constraint firstItem="49S-aD-sT4" firstAttribute="top" secondItem="mrc-kH-8gp" secondAttribute="top" constant="-44" id="ZdA-TM-dY9"/>
+                            <constraint firstItem="Bg6-NJ-vcm" firstAttribute="leading" secondItem="mrc-kH-8gp" secondAttribute="leading" id="aCn-rt-SZs"/>
+                            <constraint firstItem="Bg6-NJ-vcm" firstAttribute="top" secondItem="ACD-sC-jzc" secondAttribute="bottom" id="bqu-p8-C8A"/>
+                            <constraint firstItem="QN5-zy-ikv" firstAttribute="leading" secondItem="mrc-kH-8gp" secondAttribute="leading" id="d3k-5j-dKx"/>
+                            <constraint firstItem="ACD-sC-jzc" firstAttribute="centerX" secondItem="wTv-BW-Bbs" secondAttribute="centerX" id="gg9-G9-jVx"/>
+                            <constraint firstItem="ACD-sC-jzc" firstAttribute="top" secondItem="wTv-BW-Bbs" secondAttribute="bottom" constant="21" id="okb-9n-hzg"/>
+                            <constraint firstItem="mrc-kH-8gp" firstAttribute="trailing" secondItem="49S-aD-sT4" secondAttribute="trailing" id="rDk-QX-aBf"/>
+                            <constraint firstItem="mrc-kH-8gp" firstAttribute="bottom" secondItem="49S-aD-sT4" secondAttribute="bottom" constant="-34" id="zLP-7N-awU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8NE-W8-Mj7"/>
+                    <connections>
+                        <outlet property="indicatorImage" destination="ACD-sC-jzc" id="jGX-oj-a1I"/>
+                        <outlet property="premiumButton" destination="QN5-zy-ikv" id="NoH-bZ-mbR"/>
+                        <outlet property="settingsButton" destination="0YO-Jj-h92" id="Err-G2-ZAq"/>
+                        <outlet property="statusLabel" destination="Bg6-NJ-vcm" id="7zE-Vj-5XG"/>
+                        <outlet property="vpnButtonImage" destination="dAu-Cb-c8v" id="GpM-HA-DBd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BNZ-aE-NEd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969.56521739130437" y="1320.5357142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jyo-r7-B5a">
+            <objects>
+                <navigationController storyboardIdentifier="mainNC" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Spr-Ai-WqF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YkT-nR-16P">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Adb-Xa-7or" kind="relationship" relationship="rootViewController" id="219-Qh-Xu2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1a5-0I-74a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="1322.7886056971515"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="375" height="521"/>
+        <image name="premiumButton" width="420" height="154"/>
+        <image name="settings" width="25" height="25"/>
+        <image name="startVPN" width="721" height="788"/>
+        <image name="turnOffIndicator" width="216" height="280"/>
+        <namedColor name="backgroundColor">
+            <color red="0.12941176470588237" green="0.19215686274509805" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="defaultTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
